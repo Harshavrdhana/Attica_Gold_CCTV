@@ -1,0 +1,168 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.login {
+  background-image: url('../../assets/login-background.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 500px;
+  color: #D9D9D9;
+  border-radius: 10px;
+}
+
+
+.login-credential {
+  display: flex;
+  flex-direction: column;
+  height: 126px;
+  width: auto;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.28px;
+  text-align: left;
+}
+
+
+.login-logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 171px;
+}
+
+.login-logo img {
+  height: 55px;
+  width: 130px;
+}
+
+.login-input {
+  width: 300px;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.label-password {
+  margin-top: 10px;
+}
+
+.login-button {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.28px;
+  text-align: left;
+
+}
+
+.login-button>button {
+  width: 300px;
+  height: 30px;
+  background-color: #24A0ED;
+  border: none;
+  border-radius: 4px;
+}
+
+.login-button a {
+  text-decoration: none;
+  color: #0086D0;
+  font-weight: 600;
+  line-height: 21.28px;
+}
+
+.forget-password {
+  display: flex;
+  justify-content: end;
+  width: 300px;
+}
+
+/* 
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+  margin-bottom: 2rem;
+}
+
+.login-logo img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.login-credential {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.login-credential label {
+  margin-bottom: 0.5rem;
+}
+
+.login-input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.label-password {
+  margin-top: 1rem;
+}
+
+.login-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.forget-password {
+  margin-bottom: 1rem;
+}
+
+.login-button a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-button button {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+} */

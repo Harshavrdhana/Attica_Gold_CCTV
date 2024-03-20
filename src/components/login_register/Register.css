@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin:  auto;
+  text-align: center;
+  width: 40vw;
+  height: 80vh;
+  padding: 20px 5px;
+  background: linear-gradient(to bottom right, #475c92, #882929 90%);
+  line-height: 10px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 60%;
+  height: 70%;
+  margin: 5px auto;
+}
+.register h4 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.input-element p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.input-element input {
+  width: 100%;
+  margin-top: -5px;
+  height: 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.conditions-element {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.register-button {
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 5px;
+  background-color: #24a0ed;
+  border: none;
+  cursor: pointer;
+}
+.login-button {
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+}
+.login-button a {
+  text-decoration: none;
+  color: blue;
+}
