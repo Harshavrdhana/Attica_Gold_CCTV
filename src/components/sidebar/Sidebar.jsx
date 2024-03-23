@@ -10,8 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Sidebar = () => {
-
+const Sidebar = () =>{
 
     const [hamburgerClicked, setHamburgerClicked] = React.useState(false)
 

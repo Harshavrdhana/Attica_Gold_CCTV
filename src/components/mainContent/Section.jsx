@@ -7,22 +7,17 @@ import { useSearchParams } from 'react-router-dom'
 const Section = () => {
     const [selectedCamera, setSelectedCamera] = React.useState(0)
     const [renderSelectedCamera, setRenderSelectedCamera] = React.useState(false)
-    const [custom,setCustom]=React.useState(25);
-
-    const render=useSearchParams.get('custom')
-
-    React.useEffect(()=>{
-        setCustom(render)
-    },[render])
+    
+    const [searchParams]=useSearchParams()
+    const custom=searchParams.get('custom')|| 25;
 
     const handleClick = (i) => {
         setSelectedCamera(i)
         setRenderSelectedCamera(true);
     }
 
-    const [searchParams,setSearchParams]=useSearchParams();
-
     const renderCamera = () => {
+    
         if (!renderSelectedCamera) {
             return cameraURL.slice(0, custom).map((cam, index) => (
                 <div
@@ -40,6 +35,7 @@ const Section = () => {
                 </div>
             ))
         }
+
         else {
             return <div
                 className={`cam cam-${selectedCamera}`}
