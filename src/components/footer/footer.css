@@ -1,10 +1,15 @@
-.footer{
-    height: 70px;
-    width: 100%;
+.footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color:#f5f5f5;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: #f5f5f5;
     border: 1px solid black;
+}
+
+.footer-custom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

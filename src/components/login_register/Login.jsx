@@ -2,7 +2,6 @@ import React from 'react';
 import './login.css'
 import logo from '../../assets/attica-gold-company-logo.jpg'
 import { Link } from 'react-router-dom';
-import { RxCross2 } from "react-icons/rx";
 
 const Login = () => {
   const [loginDet, setLoginDet] = React.useState({
