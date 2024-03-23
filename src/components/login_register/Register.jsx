@@ -1,3 +1,5 @@
+import logo from "../../assets/attica-gold-company-logo.jpg";
+
 import "./Register.css";
 
 const Register = () => {
@@ -5,7 +7,7 @@ const Register = () => {
     //  Container
 
     <section className="container">
-      <img src="../../assets/Attica_logo.png" alt="logo" width={171} height={80} />
+      <img src={logo} alt="logo" width={171} height={80} />
       <div className="register">
         <h4>REGISTER</h4>
 
