@@ -1,6 +1,6 @@
 import logo from "../../assets/attica-gold-company-logo.jpg";
-
 import "./ForgotPassword.css";
+
 const ForgotPassword = () => {
   return (
     <section className="container">

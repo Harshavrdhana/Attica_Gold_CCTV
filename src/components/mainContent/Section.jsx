@@ -25,13 +25,7 @@ const Section = () => {
                     className={`cam cam-${index}`}
                     onClick={() => handleClick(index)}
                 >
-                    <iframe
-                        title={`Video ${index + 1}`}
-                        src={`${cam}`}
-                        muted
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                    ></iframe>
+                
                 </div>
             ))
         }
