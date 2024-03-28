@@ -6,40 +6,45 @@
 } */
 
 .cam {
-    background-color: black;
-    color: white;
-    border: 1px solid rgb(255, 255, 255);
-    position: relative;
-    overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
 }
-  
-  .cam iframe {
-    width: 100%; 
-    height: 100%;
-    border: none;
-    pointer-events: none;
-  }
+
+.cam iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
 
 .section-1 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    overflow: hidden;
-    gap: 2px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  overflow: hidden;
+  gap: 2px;
 }
 
 .section-9 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    overflow: hidden;
-    gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  overflow: hidden;
+  gap: 2px;
 }
 
 .section-25 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 0.75fr);
-    overflow: hidden;
-    gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 0.75fr);
+  overflow: hidden;
+  gap: 2px;
+}
+
+.main {
+  height: 50vh;
+  width: 50vw;
 }

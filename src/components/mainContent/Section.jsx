@@ -29,7 +29,6 @@ const Section = () => {
                 </div>
             ))
         }
-
         else {
             return <div
                 className={`cam cam-${selectedCamera}`}
