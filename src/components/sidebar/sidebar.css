@@ -1,10 +1,10 @@
 .sidebar{
-    background-color: #f5f5f5;
-    width: 150px;
+    background: linear-gradient(274.58deg, #FFFFFF 3.98%, #D7D7D7 96.57%);
     margin-left: 0px;
-    min-height: 85vh;
+    min-height: 83vh;
     margin-top: 0px;
-    border: 1px solid black;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .menu{

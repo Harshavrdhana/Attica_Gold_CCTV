@@ -19,6 +19,7 @@ const Sidebar = () =>{
             <div
                 className={`menu ${hamburgerClicked ? 'open' : ''}`}
                 onClick={() => setHamburgerClicked(!hamburgerClicked)}
+                style={{cursor:'pointer'}}
             >
                 <RxHamburgerMenu />
             </div>
@@ -27,7 +28,7 @@ const Sidebar = () =>{
                 <HiOutlinePlus />
                 <CiSettings />
                 <IoMdInformationCircleOutline />
-                <Link to='/section'><FaEye/></Link>
+                <Link to='section'><FaEye/></Link>
             </div>}
         </div>
     )

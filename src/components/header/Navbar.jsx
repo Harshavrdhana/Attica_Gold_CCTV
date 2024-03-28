@@ -5,9 +5,15 @@ import { IoRemoveOutline } from "react-icons/io5";
 import { PiSubtractSquareDuotone } from "react-icons/pi";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../assets/attica-gold-company-logo.jpg'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const Navigate=useNavigate();
+
+    const handleClick=()=>{
+        localStorage.removeItem('isLoggedIn')
+        Navigate('/login')
+    }
     return (
         <div>
             <div className='navbar'>
@@ -16,8 +22,9 @@ const Navbar = () => {
                 </div>
                 <div className='nav-detail'>
                     <div className='nav-avatar'>
-                        <RxAvatar />
-                        <Link to='/login'>Login</Link>
+                        <RxAvatar/>
+                        <p onClick={handleClick} style={{cursor:'pointer'}}>Logout</p>
+
                     </div>
                     <div className='nav-customize'>
                         <IoRemoveOutline />

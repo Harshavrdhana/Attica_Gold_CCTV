@@ -2,10 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 10vh;
     width: 100%;
-    background-color: #f5f5f5;
     border: 1px solid black;
+    background: linear-gradient(180deg, #FFFFFF 0%, #D7D7D7 100%);
+    border: 1px solid #D9D9D9;
+    box-shadow: 20px 40px 2px 2px #00000040;
 }
 
 .footer-custom {

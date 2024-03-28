@@ -3,6 +3,8 @@ import './footer.css'
 import { Link } from 'react-router-dom'
 import { FaRegSquare } from "react-icons/fa6";
 import { BsGrid3X3 } from "react-icons/bs";
+import { TfiLayoutGrid4 } from "react-icons/tfi";
+
 import ContinuousSlider from './ContinuousSlider';
 
 const Footer = () => {
@@ -10,10 +12,9 @@ const Footer = () => {
     <div className='footer'>
       <div></div>
       <div className='footer-custom'>
-        <Link to='/section?custom=1'><FaRegSquare /></Link>
-        <Link to='/section?custom=9'><BsGrid3X3 /></Link>
-        <Link to='/section?custom=25'>three</Link>
-
+        <Link to='section?custom=1'><FaRegSquare /></Link>
+        <Link to='section?custom=9'><BsGrid3X3 /></Link>
+        <Link to='section?custom=25'><TfiLayoutGrid4/></Link>
       </div>
       <div>
         <ContinuousSlider />

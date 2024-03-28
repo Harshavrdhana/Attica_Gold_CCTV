@@ -1,6 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .content {
   display: grid;
-  grid-template-columns: minmax(50px, 150px) 1fr;
+  grid-template-columns: 12vh 1fr;
   gap: 4px;
   margin: 2px 2px 2px 0px;
 }

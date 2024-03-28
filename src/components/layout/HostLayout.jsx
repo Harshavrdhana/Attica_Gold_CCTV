@@ -7,8 +7,7 @@ import './hostLayout.css'
 
 const HostLayout = () => {
   return (
-    <div>
-      <Navbar/>
+    <div className='host-layout'>
       <div className='content'>
         <Sidebar/>
         <Outlet/>

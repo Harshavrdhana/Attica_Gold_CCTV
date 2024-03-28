@@ -6,9 +6,9 @@
 } */
 
 .cam {
-    background-color: rgb(36, 143, 250);
+    background-color: black;
     color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
 }
