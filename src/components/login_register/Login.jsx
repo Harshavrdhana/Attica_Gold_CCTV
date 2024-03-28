@@ -1,7 +1,7 @@
 import React from 'react';
 import './login.css'
 import logo from '../../assets/attica-gold-company-logo.jpg'
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 
 const Login = () => {
   const [loginDet, setLoginDet] = React.useState({
@@ -16,6 +16,10 @@ const Login = () => {
       [name]: value
     }));
   };
+
+  const location = useLocation();
+
+  console.log(location)
 
   console.log(loginDet);
 
@@ -46,7 +50,7 @@ const Login = () => {
         </div>
         <div className='login-button'>
           <div className='forget-password'>
-            <a href="">Forget Password?</a>
+            <Link to='/forgot-password'>Forgot Password</Link>
           </div>
           <button type='submit'>Login</button>
           <p>No account yet? <Link to='/register'>Register</Link> one now</p>
