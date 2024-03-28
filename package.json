@@ -27,8 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:folder1": "cd server && npx nodemon hls-server.js",
-    "start:folder2": "cd server && ffmpeg -rtsp_transport tcp -i rtsp://admin:LOZLUD@10.0.0.2:554/ch1/main -fflags flush_packets -max_delay 5 -flags -global_header -hls_time 5 -hls_list_size 3 -vcodec copy -y ./videos/ipcam/index.m3u8",
-    "start:all": "npm-run-all -p start:folder1 start:folder2 start"
+    "start:folder3": "cd server && npx nodemon cleaner.js",
+    "start:folder2": "cd server && ffmpeg -rtsp_transport tcp -i rtsp://admin:LOZLUD@10.0.0.18:554/ch1/main -acodec aac -strict -2 -b:a 128k -vcodec copy -preset ultrafast -tune zerolatency -fflags nobuffer -flags +global_header -max_delay 100 -hls_time 10 -hls_list_size 1 -y ./videos/ipcam/index.m3u8",
+    "start:all": "npm-run-all -p start:folder1 start:folder3 start:folder2 start"
   },
   "eslintConfig": {
     "extends": [

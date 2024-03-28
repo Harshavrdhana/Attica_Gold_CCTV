@@ -60,17 +60,19 @@ const Section = () => {
   //     </div>
   // )
 
-  <div className="App">
-    <h1>Camera Streaming</h1>
-    {/* <p>URL: http://localhost:4000/index.m3u8</p> */}
-    <ReactPlayer
-      url="http://localhost:4000/index.m3u8"
-      playing={true}
-      controls={true} // Add controls to display video controls
-      width="70%" // Set width to fill the container
-      height="auto" // Set height to maintain aspect ratio
-    />
-  </div>;
+  return (
+    <div className="main">
+      {/* <h1>Camera Streaming</h1> */}
+      {/* <p>URL: http://localhost:4000/index.m3u8</p> */}
+      <ReactPlayer
+        url="http://localhost:4000/index.m3u8"
+        playing={true}
+        controls={true} // Add controls to display video controls
+        width="70%" // Set width to fill the container
+        height="auto" // Set height to maintain aspect ratio
+      />
+    </div>
+  );
 };
 
 export default Section;
