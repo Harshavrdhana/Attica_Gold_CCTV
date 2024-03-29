@@ -9,7 +9,7 @@ import ForgotPassword from "./components/login_register/ForgotPassword";
 import HomePage from "./components/homepage/HomePage";
 import HomeLayout from "./components/layout/HomeLayout";
 
-function App() {
+function App() { 
   return (
       <BrowserRouter>
         <Routes>
