@@ -1,5 +1,7 @@
 import "./Register.css";
 
+import logo from "../../assets/attica-gold-company-logo.jpg";
+
 const Register = () => {
   return (
     //  Container

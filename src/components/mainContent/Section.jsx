@@ -11,19 +11,19 @@ const Section = () => {
   // const [searchParams]=useSearchParams()
   // const custom=searchParams.get('custom')|| 25;
 
-    const renderCamera = () => {
-    
-        if (!renderSelectedCamera) {
-            return cameraURL.slice(0, custom).map((cam, index) => (
-                <div
-                    key={index}
-                    className={`cam cam-${index}`}
-                    onClick={() => handleClick(index)}
-                >
-                
-                </div>
-            ))
-        }
+  // const renderCamera = () => {
+  //   if (!renderSelectedCamera) {
+  //     return cameraURL
+  //       .slice(0, custom)
+  //       .map((cam, index) => (
+  //         <div
+  //           key={index}
+  //           className={`cam cam-${index}`}
+  //           onClick={() => handleClick(index)}
+  //         ></div>
+  //       ));
+  //   }
+  // }
   // const handleClick = (i) => {
   //     setSelectedCamera(i)
   //     setRenderSelectedCamera(true);
