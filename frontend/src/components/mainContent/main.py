@@ -55,7 +55,7 @@ app = Flask(__name__)
 # }
 
 def gen_frames():
-    rtsp_url = 'rtsp://admin:LOZLUD@10.0.0.52:554/ch1/main'  # Replace with your camera's RTSP URL
+    rtsp_url = 'rtsp://admin:LOZLUD@10.0.0.37:554/ch1/main'  # Replace with your camera's RTSP URL
     cap = cv2.VideoCapture(rtsp_url)
     while cap.isOpened():
         ret, frame = cap.read()
@@ -69,7 +69,7 @@ def gen_frames():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('Section.jsx')
 
 @app.route('/video_feed')
 def video_feed():
