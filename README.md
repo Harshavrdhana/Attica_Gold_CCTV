@@ -2,8 +2,6 @@
 
 #### Install dependencies for backend
 
-- cd ./backend
-
 - npm i
 
 #### Install python dependencies
