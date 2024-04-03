@@ -3,7 +3,7 @@ import "./ForgotPassword.css";
 
 const ForgotPassword = () => {
   return (
-    <section className="container">
+    <section className="forgot-container">
       <img src={logo} alt="logo" width={171} height={80} />
       <div className="register">
         <h4>FORGOT PASSWORD</h4>

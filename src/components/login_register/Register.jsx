@@ -3,32 +3,10 @@ import logo from "../../assets/attica-gold-company-logo.jpg";
 
 const Register = () => {
   return (
-    //  Container
-
-    <section className="container">
+    <div className="register-container">
       <img src={logo} alt="logo" width={171} height={80} />
       <div className="register">
         <h4>REGISTER</h4>
-
-        {/* *********Simplified Code, feel free uncomment and check********************* */}
-
-        {/* {[
-          "Name",
-          "User name",
-          "Employee ID",
-          "Password",
-          "Confirm Password",
-        ].map((element, index) => (
-          <div key={index} className="input-element">
-            <p>{element}</p>
-            <input type="text" />
-          </div>
-        ))} */}
-
-        {/* *************************************** */}
-
-        {/* Input Elements */}
-
         <div className="input-element">
           <p>Name</p>
           <input type="text" />
@@ -61,7 +39,7 @@ const Register = () => {
           Already have an account? <a href="/">Login</a>
         </p>
       </div>
-    </section>
+    </div>
   );
 };
 
