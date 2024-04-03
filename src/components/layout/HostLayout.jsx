@@ -1,20 +1,25 @@
 import React from 'react'
-import Navbar from '../header/Navbar'
 import Sidebar from '../sidebar/Sidebar'
 import { Outlet } from 'react-router-dom'
 import Footer from '../footer/Footer'
 import './hostLayout.css'
 
 const HostLayout = () => {
+
+  const [resize, setResize] = React.useState(false);
+  const handleSize = (newSize) => {
+    setResize(newSize)
+  }
+
   return (
     <div className='host-layout'>
-      <div className='content'>
-        <Sidebar/>
+      <div className={`${resize ? 'content-resize': 'content'}`}>
+        <Sidebar handleSize={handleSize}/>
         <Outlet/>
       </div>
       <Footer/>
-    </div>
+    </div >
   )
 }
 
-export default HostLayout
+export default HostLayout;

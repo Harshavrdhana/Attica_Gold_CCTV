@@ -1,5 +1,4 @@
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -12,36 +11,49 @@
     border-bottom: 1px solid #D9D9D9;
     color: white;
 }
-.nav-logo{
+
+.nav-logo {
     width: 100px;
     height: 41px;
     margin-left: 20px;
+
 }
-.attica-logo{
+
+.attica-logo {
     width: 100px;
     height: auto;
     object-fit: cover;
     position: center;
 }
 
-.nav-detail{
+.nav-end {
+    width: 40vw;
     display: flex;
-    justify-content: space-between;
-    width: 450px;
-}
-.nav-avatar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 200px;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.nav-customize{
+.nav-detail {
+    width: 15vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 200px;
-    margin-right: 10px;
+}
+.nav-user{
+display: flex;
+align-items: center;
+ 
+}
+.nav-logout{
+margin-right: 2vw;
+font-size: 20px;
+}
+.nav-bell{
+   font-size: 15px;
 }
 
-
+.user{
+    font-size: 1.3rem;
+    margin-right: 5px;
+    margin-left: 5px;
+}

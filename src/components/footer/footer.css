@@ -5,13 +5,53 @@
     height: 10vh;
     width: 100%;
     border: 1px solid black;
-    background: linear-gradient(180deg, #FFFFFF 0%, #D7D7D7 100%);
-    border: 1px solid #D9D9D9;
+    background: linear-gradient(180deg, #FFFFFF 0%, #c0b7b7 100%);
+    border: 1px solid #cdc4c4;
     box-shadow: 20px 40px 2px 2px #00000040;
+    font-size: 20px;
+    padding: 10px;
 }
+
+
 
 .footer-custom {
     display: flex;
+    justify-content: space-evenly;
+    width: 200px;
     align-items: center;
     gap: 10px;
+    margin-left: 30vw;
+    border: 2px solid #8b8585;
+    border-radius: 20px;
+    background-color: white;
 }
+
+.expand-button,.play-button {
+    font-size:large;
+    padding: 4px 4px 0px 4px;
+    border-radius: 5px;
+    border-color: rgb(83, 79, 79);
+    background-color: rgb(249, 253, 255);
+    color: gray;
+    border: 1px solid gray;
+    color: gray;
+    
+}
+
+
+.grid-icon{
+    color:gray;
+   font-size: 20px;
+   margin-top: 5px;
+}
+.grid-icon-five{
+    color: black;
+    margin-top: 4.25px;
+    font-size: 18.5px;
+}
+
+.volume-slider{
+    color: gray;
+}
+
+

@@ -1,16 +1,16 @@
 import React from 'react'
 import './navbar.css'
-import { RxAvatar } from "react-icons/rx";
-import { IoRemoveOutline } from "react-icons/io5";
-import { PiSubtractSquareDuotone } from "react-icons/pi";
-import { RxCross2 } from "react-icons/rx";
 import logo from '../../assets/attica-gold-company-logo.jpg'
 import { useNavigate } from 'react-router-dom';
+import { FaRegBell } from "react-icons/fa6";
+import { FaRegUserCircle } from "react-icons/fa";
+import { IoMdPower } from "react-icons/io";
+
 
 const Navbar = () => {
-    const Navigate=useNavigate();
+    const Navigate = useNavigate();
 
-    const handleClick=()=>{
+    const handleClick = () => {
         localStorage.removeItem('isLoggedIn')
         Navigate('/login')
     }
@@ -20,16 +20,19 @@ const Navbar = () => {
                 <div className='nav-logo'>
                     <img className='attica-logo' src={logo} alt="logo" />
                 </div>
-                <div className='nav-detail'>
-                    <div className='nav-avatar'>
-                        <RxAvatar/>
-                        <p onClick={handleClick} style={{cursor:'pointer'}}>Logout</p>
 
+                <div className='nav-end'>
+                    <div className='nav-detail'>
+                        <FaRegBell className='nav-bell' />
+
+                        <div className='nav-user'>
+                            <FaRegUserCircle className='user'/> <span style={{ fontSize: '14px' }} >User</span>
+                        </div>
                     </div>
-                    <div className='nav-customize'>
-                        <IoRemoveOutline />
-                        <PiSubtractSquareDuotone />
-                        <RxCross2 />
+                    <div className='nav-logout'>
+
+                        <p onClick={handleClick} style={{ cursor: 'pointer' }}><IoMdPower /></p>
+
                     </div>
                 </div>
             </div>
