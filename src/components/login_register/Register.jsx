@@ -1,4 +1,5 @@
 import "./Register.css";
+import logo from "../../assets/attica-gold-company-logo.jpg";
 
 import logo from "../../assets/attica-gold-company-logo.jpg";
 
