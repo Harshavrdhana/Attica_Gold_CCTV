@@ -1,6 +1,6 @@
 import React from "react";
 import "./section.css";
-import { cameraURL } from "../../../assets/cameraURL";
+import { cameraURL } from "../../assets/cameraURL";
 import { useSearchParams } from "react-router-dom";
 
 const Section = () => {
@@ -46,7 +46,12 @@ const Section = () => {
 
   return (
     <div>
-      <img src="http://127.0.0.1:5000/" width="640" height="480" alt="video" />
+      <img
+        src="http://127.0.0.1:5000/video_feed"
+        width="350"
+        height="300"
+        alt="video"
+      />
     </div>
     // <div
     //     className={`section-${!renderSelectedCamera ? custom : 1}`}

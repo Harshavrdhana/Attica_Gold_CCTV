@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Stream</title>
+  </head>
+  <body>
+    <h1>Live Stream from Camera</h1>
+    <img
+      src="{{ url_for('video_feed') }}"
+      width="300"
+      height="300"
+      alt="{{
+    url_for('video_feed') }}"
+    />
+
+    <script>
+      const url = document.querySelector("img");
+      console.log(url);
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Camera Streams</title>
+  </head>
+  <body>
+    <h1>Multiple Camera Streams</h1>
+
+     Display camera 1 stream 
+    <div>
+      <h2>Camera 1</h2>
+      <img
+        src="{{ url_for('video_feed', camera='camera1') }}"
+        width="640"
+        height="480"
+      />
+    </div>
+
+     Display camera 2 stream 
+    <div>
+      <h2>Camera 2</h2>
+      <img
+        src="{{ url_for('video_feed', camera='camera2') }}"
+        width="640"
+        height="480"
+      />
+    </div>
+  </body>
+</html> -->

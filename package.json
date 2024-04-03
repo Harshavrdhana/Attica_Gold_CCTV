@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd frontend && npm start",
-    "backend": "cd frontend/src/components/mainContent && python main.py",
-    "fullstack": "concurrently \"npm run backend\" \"npm run frontend\""
+    "backend": "nodemon backend/index.js",
+    "cameraApi": "cd public && python main.py",
+    "fullstack": "concurrently \"npm run cameraApi\" \"npm run frontend\" \"npm run backend\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
   }
 }
