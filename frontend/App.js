@@ -9,23 +9,23 @@ import ForgotPassword from "./components/login_register/ForgotPassword";
 import HomePage from "./components/homepage/HomePage";
 import HomeLayout from "./components/layout/HomeLayout";
 
-function App() { 
+function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-          <Route path="forgot-password" element={<ForgotPassword/>} />
-          <Route element={<AuthRequired />}>
-            <Route element={<HomeLayout />}>
-              <Route path="/" element={<HomePage />} />
-              <Route path="homepage" element={<HostLayout />}>
-                <Route index path="section" element={<Section />} />
-              </Route>
-            </Route>
+    <BrowserRouter>
+      <Routes>
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="forgot-password" element={<ForgotPassword />} />
+        {/* <Route element={<AuthRequired />}> */}
+        <Route element={<HomeLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="homepage" element={<HostLayout />}>
+            <Route index path="section" element={<Section />} />
           </Route>
-        </Routes>
-      </BrowserRouter>
+          {/* </Route> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
