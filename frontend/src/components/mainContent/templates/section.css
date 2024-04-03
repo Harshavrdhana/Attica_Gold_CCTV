@@ -28,7 +28,7 @@
   gap: 2px;
 }
 
-.section-4{
+.section-4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
