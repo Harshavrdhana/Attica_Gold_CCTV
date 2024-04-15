@@ -53,3 +53,64 @@
     </div>
   </body>
 </html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple RTSP Video Feeds</title>
+    <style>
+      .video-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .video-frame {
+        width: 45%; /* Adjust the width as needed */
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <div class="video-frame">
+        <img id="camera1" src="" alt="Camera 1" style="width: 100%" />
+      </div>
+      <div class="video-frame">
+        <img id="camera2" src="" alt="Camera 2" style="width: 100%" />
+      </div>
+       Add more video frames as needed
+    </div>
+
+    <script>
+      // Function to update image sources from video feed
+      function updateImageSources() {
+        fetch("/video_feed")
+          .then((response) => response.text())
+          .then((data) => {
+            const frames = data.split("--frame");
+            frames.forEach((frame) => {
+              if (frame.includes("image/jpeg\r\n\r\n")) {
+                const url = URL.createObjectURL(
+                  new Blob([frame], { type: "image/jpeg\r\n\r\n" })
+                );
+                const cameraId = frame.includes("Camera 1")
+                  ? "camera1"
+                  : "camera2"; // Adjust camera IDs
+                document.getElementById(cameraId).src = url;
+              }
+            });
+            // Continue updating images recursively
+            updateImageSources();
+          })
+          .catch((error) => {
+            console.error("Error fetching video feed:", error);
+          });
+      }
+
+      // Start updating image sources
+      updateImageSources();
+    </script>
+  </body>
+</html> -->

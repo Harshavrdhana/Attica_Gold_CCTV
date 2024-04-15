@@ -1,9 +1,12 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import "./section.css";
 import { cameraURL } from "../../assets/cameraURL";
 import { useSearchParams } from "react-router-dom";
+import ImagePlayer from "./VideoPlayer";
 
 const Section = () => {
+  const rtspUrl = "http://127.0.0.1:5000/video_feed";
   // const [selectedCamera, setSelectedCamera] = React.useState(0)
   // const [renderSelectedCamera, setRenderSelectedCamera] = React.useState(false)
 
@@ -52,6 +55,14 @@ const Section = () => {
         height="300"
         alt="video"
       />
+      {/* <ReactPlayer
+        url="http://127.0.0.1:5000/video_feed"
+        playing={true}
+        controls={true} // Add controls to display video controls
+        width="70%" // Set width to fill the container
+        height="auto" // Set height to maintain aspect ratio
+      /> */}
+      {/* <ImagePlayer rtspUrl={rtspUrl} /> */}
     </div>
     // <div
     //     className={`section-${!renderSelectedCamera ? custom : 1}`}
