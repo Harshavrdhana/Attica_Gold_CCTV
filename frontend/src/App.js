@@ -8,24 +8,29 @@ import AuthRequired from "./components/authentication/AuthRequired";
 import ForgotPassword from "./components/login_register/ForgotPassword";
 import HomePage from "./components/homepage/HomePage";
 import HomeLayout from "./components/layout/HomeLayout";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
-        <Route path="forgot-password" element={<ForgotPassword />} />
-        {/* <Route element={<AuthRequired />}> */}
-        <Route element={<HomeLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="homepage" element={<HostLayout />}>
-            <Route index path="section" element={<Section />} />
+    <>
+      <ToastContainer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+          {/* <Route element={<AuthRequired />}> */}
+          <Route element={<HomeLayout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="homepage" element={<HostLayout />}>
+              <Route index path="section" element={<Section />} />
+            </Route>
+            {/* </Route> */}
           </Route>
-          {/* </Route> */}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
