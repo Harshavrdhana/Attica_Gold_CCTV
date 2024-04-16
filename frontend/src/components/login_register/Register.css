@@ -3,15 +3,16 @@
   box-sizing: border-box;
 }
 
-.register-container{
+.register-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 10vh auto;
   text-align: center;
-  width: 40vw;
+  width: 30vw;
   height: 80vh;
-  padding: 20px 5px;
-  background: linear-gradient(to bottom right, #475c92, #882929 90%);
-  line-height: 10px;
+  padding: 20px 0px;
+  background-image: url("../../assets/login-background.jpg");
+
+  border-radius: 10px;
 }
 
 .register {
@@ -19,8 +20,9 @@
   flex-direction: column;
   text-align: left;
   width: 60%;
-  height: 70%;
+  height: 100%;
   margin: 5px auto;
+  gap: 8px;
 }
 .register h4 {
   color: #ffffff;
@@ -28,17 +30,18 @@
   font-weight: 600;
   letter-spacing: 2px;
 }
-.input-element p {
-  color: #ffffff;
+
+.input-element label {
+  color: #d9d9d9;
   font-size: 14px;
 }
 
 .input-element input {
-  width: 100%;
+  width: 80%;
   margin-top: -5px;
-  height: 20px;
+  height: 50px;
   border-radius: 4px;
-  outline: none;
+
   border: none;
 }
 
@@ -68,11 +71,12 @@
   cursor: pointer;
 }
 .login-button {
-  margin-top: 25px;
-  text-align: center;
+  margin: 0;
+  width: 100%;
+
   color: white;
 }
-.login-button a {
+.login-button Link {
   text-decoration: none;
   color: blue;
 }
