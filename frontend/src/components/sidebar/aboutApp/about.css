@@ -1,0 +1,46 @@
+.about-main{
+  border:1px solid rgb(222, 214, 214) ;
+  border-radius: 4px;
+  height: auto;
+  width: 450px;
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+  top: 20%;
+  left:25%;
+  background-color: rgb(255, 255, 255);
+}
+.about-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgb(244, 243, 243);
+
+}
+.about-close{
+  font-size: 25px;
+  color:rgb(15, 195, 236);
+}
+.about-Image{
+  width: 12vW;
+  margin-top: 20px;
+}
+.about-footer{
+  background: rgb(233, 229, 229);
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 2vh;
+}
+.about-content{
+text-align: center;
+justify-content: center;
+}
+
+.about-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
