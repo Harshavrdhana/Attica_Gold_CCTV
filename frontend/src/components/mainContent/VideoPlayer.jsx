@@ -17,7 +17,6 @@ const ImagePlayer = ({ rtspUrl }) => {
 
     // Fetch image when the component mounts
     fetchImage();
-
     // Cleanup function to revoke object URL when the component unmounts
     return () => {
       if (imageSrc) {

@@ -20,18 +20,17 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="forgot-password" element={<ForgotPassword />} />
-          {/* <Route element={<AuthRequired />}> */}
-          <Route element={<HomeLayout />}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="homepage" element={<HostLayout />}>
-              <Route index path="section" element={<Section />} />
+          <Route element={<AuthRequired />}>
+            <Route element={<HomeLayout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="homepage" element={<HostLayout />}>
+                <Route index path="section" element={<Section />} />
+              </Route>
             </Route>
-            {/* </Route> */}
           </Route>
         </Routes>
       </BrowserRouter>
     </>
   );
 }
-
 export default App;

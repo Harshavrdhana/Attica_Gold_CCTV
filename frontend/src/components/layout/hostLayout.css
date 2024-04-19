@@ -6,14 +6,14 @@
 
 .content {
   display: grid;
-  grid-template-columns: 5vw 5fr;
+  grid-template-columns: 5vw 1fr;
   gap: 4px;
   margin: 2px 2px 2px 0px;
 }
 
 .content-resize {
   display: grid;
-  grid-template-columns: 15vw 5fr;
+  grid-template-columns: 15vw 1fr;
   gap: 4px;
   margin: 2px 2px 2px 0px;
 }

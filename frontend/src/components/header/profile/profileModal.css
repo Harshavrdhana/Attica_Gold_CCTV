@@ -1,0 +1,91 @@
+.profile-main {
+  border: 1px solid rgb(180, 178, 178);
+  border-radius: 5px;
+  background-color: white;
+  width: 50vW;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:5px 10px;
+  background: rgb(132, 26, 84);
+  color: white;
+  font-size: 17px;
+}
+
+.profile-nav2 {
+  display: flex;
+  gap: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  background: rgb(192, 189, 189);
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.profile-account {
+  background: rgb(238, 228, 228);
+  padding: 3px 5px;
+}
+
+.profile-password {
+  background: rgb(238, 228, 228);
+  padding: 3px 5px;
+}
+
+.profile-account:hover {
+  background: white;
+}
+
+.profile-password:hover {
+  background: white;
+}
+
+.profile-pic-information {
+  font-size: 19px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  background: rgb(227, 226, 226);
+  margin-top: px;
+  margin-right: 10px;
+  margin-left: 15px;
+
+}
+
+.profile-acc-information {
+  font-size: 19px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  background: rgb(227, 226, 226);
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 15px;
+
+}
+
+.profile-input {
+  padding-top: 10px;
+  padding-left: 35px;
+
+
+}
+
+.profile-save-button {
+  background: rgb(255, 51, 5);
+  border: none;
+  color: white;
+  padding: 5px 35px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+
+}

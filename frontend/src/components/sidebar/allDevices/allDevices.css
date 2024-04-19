@@ -1,0 +1,90 @@
+.allDevice-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: linear-gradient(#5d1860, #1b078b);
+  color: white;
+}
+.allDevice-main {
+  width:50vw;
+  border: 1px solid rgb(105, 78, 78);
+  border-radius: 4px;
+  height: 80vh;
+  top: 10%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: white;
+}
+
+.allDevice-menu {
+  padding-top: 7px;
+  padding-left: 15px;
+  background: rgb(235, 230, 230);
+
+  border-top: 1px solid rgb(216, 207, 207);
+  display: flex;
+  gap: 5px;
+
+}
+
+.allDevice-buttons {
+  padding: 5px 10px 5px 10px;
+  border-color: rgb(234, 224, 224);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+
+
+
+}
+
+.allDevice-Lan {
+  background: white;
+  color: rgb(65, 148, 225);
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+.allDevice-onLan {
+  background: white;
+  border-bottom: 1px solid rgb(234, 228, 228);
+}
+
+.allDevice-content {
+  border: 1px solid rgb(198, 192, 192);
+  height: 47vh;
+  width: 20vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.allDevice-header {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.allDevice-offline {
+  margin-top: 10px;
+  border: 1px solid rgb(230, 223, 223);
+  height: 25vh;
+  background: rgb(193, 190, 190);
+  color: white;
+}
+
+.allDevice-systemDetail {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.allDevice-waterMark {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+}

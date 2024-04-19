@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/attica-gold-company-logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { FaRegBell } from "react-icons/fa6";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoMdPower } from "react-icons/io";
+import ProfileModal from './profile/ProfileModal'
+
 import { useLogoutMutation } from "../../redux/api/usersApi";
 
 import { logout } from "../../redux/features/auth/authSlice";
@@ -15,17 +17,21 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const [logoutApiCall] = useLogoutMutation();
+  const [modalProfile, setModalProfile] = useState(false)
+
+  const handleModalProfile = () => {
+    setModalProfile(!modalProfile);
+  };
 
   const logoutHandler = async () => {
     try {
       await logoutApiCall();
       dispatch(logout());
-
       navigate("/login");
     } catch (error) {
       console.log(error);
     }
-  };
+  }
   return (
     <div>
       <div className="navbar">
@@ -38,7 +44,12 @@ const Navbar = () => {
             <FaRegBell className="nav-bell" />
 
             <div className="nav-user">
-              <FaRegUserCircle className="user" />{" "}
+              <FaRegUserCircle
+                className="user"
+                onClick={handleModalProfile}
+                style={{ cursor: "pointer" }}
+              />
+             {modalProfile && <ProfileModal handleModalProfile={handleModalProfile} />}
               <span style={{ fontSize: "14px" }}>User</span>
             </div>
           </div>
@@ -50,7 +61,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
