@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd frontend && npm start",
     "backend": "nodemon backend/index.js",
-    "fullstack": "concurrently  \"npm run frontend\" \"npm run backend\""
+    "cameraApi": "cd public && python main.py",
+    "fullstack": "concurrently  \"npm run frontend\" \"npm run cameraApi\" \"npm run backend\""
   },
   "keywords": [],
   "author": "",
