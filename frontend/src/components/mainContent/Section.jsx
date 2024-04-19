@@ -7,13 +7,13 @@ import { useSearchParams } from 'react-router-dom'
 const Section = () => {
     const [selectedCamera, setSelectedCamera] = React.useState(0)
     const [renderSelectedCamera, setRenderSelectedCamera] = React.useState(false)
-    
-    const [searchParams]=useSearchParams()
-    const custom=searchParams.get('custom')|| 25;
-    useEffect(()=>{
-      setRenderSelectedCamera(false);
-      setSelectedCamera(0)
-    },[custom])
+
+    const [searchParams] = useSearchParams()
+    const custom = searchParams.get('custom') || 25;
+    useEffect(() => {
+        setRenderSelectedCamera(false);
+        setSelectedCamera(0)
+    }, [custom])
 
     const handleClick = (i) => {
         setSelectedCamera(i)
@@ -21,7 +21,7 @@ const Section = () => {
     }
 
     const renderCamera = () => {
-    
+
         if (!renderSelectedCamera) {
             return cameraURL.slice(0, custom).map((cam, index) => (
                 <div
@@ -29,13 +29,14 @@ const Section = () => {
                     className={`cam cam-${index}`}
                     onClick={() => handleClick(index)}
                 >
-                    <iframe
+                    {/* <iframe
                         title={`Video ${index + 1}`}
                         src={`${cam}`}
                         muted
                         allow="autoplay; encrypted-media"
                         allowFullScreen
-                    ></iframe>
+                    ></iframe> */}
+                    <img src="http://127.0.0.1:5000/video_feed" alt="alt" />
                 </div>
             ))
         }
@@ -45,13 +46,15 @@ const Section = () => {
                 className={`cam cam-${selectedCamera}`}
                 onClick={() => setRenderSelectedCamera(!renderSelectedCamera)}
             >
-                <iframe
+                {/* <iframe
                     title={`Video ${selectedCamera + 1}`}
                     src={`${cameraURL[selectedCamera]}?autoplay=1`}
                     muted
                     allow="autoplay; encrypted-media"
                     allowFullScreen
-                ></iframe>
+                ></iframe> */}
+                <img src="http://127.0.0.1:5000/video_feed" alt="alt" />
+
             </div>
         }
     }

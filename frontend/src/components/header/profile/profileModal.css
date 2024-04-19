@@ -14,7 +14,8 @@
   align-items: center;
   justify-content: space-between;
   padding:5px 10px;
-  background: gainsboro;
+  background: rgb(132, 26, 84);
+  color: white;
   font-size: 17px;
 }
 

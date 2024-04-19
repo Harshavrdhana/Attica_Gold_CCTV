@@ -13,12 +13,17 @@ import Modal from 'react-modal'
 import About from "./aboutApp/About.jsx";
 import Settings from "./settings/Settings.jsx"
 import AllDevices from './allDevices/AllDevices.jsx'
+import AddDevice from "./addDevice/AddDevice.jsx";
+import Album from "./viewAlbum/Album.jsx";
 
 const Sidebar = ({ handleSize }) => {
   const [hamburgerClicked, setHamburgerClicked] = React.useState(false);
   const [modalAbout, setModalAbout] = useState(false);
   const [modalSettings, setModalSettings] = useState(false);
   const [modalAllDevice, setModalAllDevice] = useState(false);
+  const [modalAddDevice, setModalAddDevice] = useState(false);
+  const [modalLocalAlbum, setModalLocalAlbum] = useState(false)
+
   const handleHamburger = () => {
     setHamburgerClicked(!hamburgerClicked);
   };
@@ -35,6 +40,12 @@ const Sidebar = ({ handleSize }) => {
   }
   const handleAllDeviceModal = () => {
     setModalAllDevice(!modalAllDevice)
+  }
+  const handleAddDeviceModal = () => {
+    setModalAddDevice(!modalAddDevice)
+  }
+  const handleLocalAlbumModal = () => {
+    setModalLocalAlbum(!modalLocalAlbum)
   }
 
   return (
@@ -58,13 +69,39 @@ const Sidebar = ({ handleSize }) => {
         <div className={` ${hamburgerClicked ? "open" : "sidebar-4icons"}`}>
           {hamburgerClicked && <hr className="line" />}
           <div className={`${hamburgerClicked ? "sidebar-name" : ""}`}>
-            <IoMdAdd className="icon" />
+            <IoMdAdd
+              className="icon"
+              onClick={handleAddDeviceModal}
+              style={{ cursor: 'pointer' }}
+            />
             {hamburgerClicked && <p className="icon-name">Add a device</p>}
+            <Modal
+              isOpen={modalAddDevice}
+              onRequestClose={handleAddDeviceModal}
+              contentLabel="AddDevice Modal"
+              className="adddevice-modal"
+              overlayClassName="modal-overlay"
+            >
+              <AddDevice closeModal={handleAddDeviceModal} />
+            </Modal>
           </div>
           {hamburgerClicked && <hr className="line" />}
           <div className={`${hamburgerClicked ? "sidebar-name" : ""}`}>
-            <IoMdPhotos className="icon" />
+            <IoMdPhotos
+              className="icon"
+              onClick={handleLocalAlbumModal}
+              style={{ cursor: 'pointer' }}
+            />
             {hamburgerClicked && <p className="icon-name">Local album</p>}
+            <Modal
+              isOpen={modalLocalAlbum}
+              onRequestClose={handleLocalAlbumModal}
+              contentLabel="album Modal"
+              className="album-modal"
+              overlayClassName="modal-overlay"
+            >
+              <Album closeModal={handleLocalAlbumModal} />
+            </Modal>
           </div>
           {hamburgerClicked && <hr className="line" />}
           <div className={`${hamburgerClicked ? "sidebar-name" : ""}`}>
@@ -74,16 +111,16 @@ const Sidebar = ({ handleSize }) => {
               style={{ cursor: 'pointer' }}
             />
             {hamburgerClicked && <p className="icon-name">Settings</p>}
-              <Modal
-                isOpen={modalSettings}
-                onRequestClose={handleSettingsModal}
-                contentLabel="Settings Modal"
-                className="settings-modal"
-                overlayClassName="modal-overlay"
-              >
+            <Modal
+              isOpen={modalSettings}
+              onRequestClose={handleSettingsModal}
+              contentLabel="Settings Modal"
+              className="settings-modal"
+              overlayClassName="modal-overlay"
+            >
 
-                <Settings closeModal={handleSettingsModal} />
-              </Modal>
+              <Settings closeModal={handleSettingsModal} />
+            </Modal>
           </div>
           {hamburgerClicked && <hr className="line" />}
           <div className={`${hamburgerClicked ? "sidebar-name" : ""}`}>
@@ -93,16 +130,16 @@ const Sidebar = ({ handleSize }) => {
               style={{ cursor: 'pointer' }}
             />
             {hamburgerClicked && <p className="icon-name">All Devices</p>}
-              <Modal
-                isOpen={modalAllDevice}
-                onRequestClose={handleAllDeviceModal}
-                contentLabel="AllDevice Modal"
-                className="allDevice-modal"
-                overlayClassName="modal-overlay"
-              >
+            <Modal
+              isOpen={modalAllDevice}
+              onRequestClose={handleAllDeviceModal}
+              contentLabel="AllDevice Modal"
+              className="allDevice-modal"
+              overlayClassName="modal-overlay"
+            >
 
-                <AllDevices closeModal={handleAllDeviceModal} />
-              </Modal>
+              <AllDevices closeModal={handleAllDeviceModal} />
+            </Modal>
           </div>
           {hamburgerClicked && <hr className="line" />}
           <div className={`${hamburgerClicked ? "sidebar-name" : ""}`}>
@@ -120,15 +157,15 @@ const Sidebar = ({ handleSize }) => {
             onClick={handleAboutModal}
             style={{ cursor: "pointer" }}
           />
-            <Modal
-              isOpen={modalAbout}
-              onRequestClose={handleAboutModal}
-              contentLabel="About Modal"
-              className="about-modal"
-              overlayClassName="modal-overlay"
-            >
-              <About closeModal={handleAboutModal} />
-            </Modal>
+          <Modal
+            isOpen={modalAbout}
+            onRequestClose={handleAboutModal}
+            contentLabel="About Modal"
+            className="about-modal"
+            overlayClassName="modal-overlay"
+          >
+            <About closeModal={handleAboutModal} />
+          </Modal>
         </div>
       )}
     </div>

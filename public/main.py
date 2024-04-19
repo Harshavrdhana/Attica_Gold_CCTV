@@ -89,7 +89,7 @@ app = Flask(__name__)
 CORS(app)
 
 def gen_frames():
-    rtsp_url = 'rtsp://admin:[Admin@916]@192.168.1.207:554/Streaming/Channels/101'  # Replace with your camera's RTSP URL
+    rtsp_url = 'rtsp://admin:qwerty@192.168.1.64:554/ch1/main'  # Replace with your camera's RTSP URL
     cap = cv2.VideoCapture(rtsp_url)
     
     # Initialize audio capture

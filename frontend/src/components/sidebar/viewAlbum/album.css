@@ -1,0 +1,23 @@
+.mainAdd {
+  border: 1px solid rgb(228, 218, 218);
+  width: 45vW;
+  height: 75vh;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.headerAdd {
+  padding: 13px;
+  color: white;
+  background: rgb(155, 14, 115);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentAdd {
+  text-align: center;
+  margin-top: 20vh;
+}
