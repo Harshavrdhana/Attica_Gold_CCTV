@@ -68,11 +68,13 @@ const Sidebar = ({ handleSize }) => {
         </div>
         <div className={` ${hamburgerClicked ? "open" : "sidebar-4icons"}`}>
           {hamburgerClicked && <hr className="line" />}
-          <div className={`${hamburgerClicked ? "sidebar-name" : ""}`}>
+          <div
+            className={`${hamburgerClicked ? "sidebar-name" : ""}`}
+            onClick={handleAddDeviceModal}
+            style={{ cursor: 'pointer' }}>
             <IoMdAdd
               className="icon"
-              onClick={handleAddDeviceModal}
-              style={{ cursor: 'pointer' }}
+
             />
             {hamburgerClicked && <p className="icon-name">Add a device</p>}
             <Modal
