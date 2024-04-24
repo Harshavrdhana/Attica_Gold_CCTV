@@ -1,7 +1,10 @@
 .about-main{
   border:1px solid rgb(222, 214, 214) ;
   border-radius: 4px;
-  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 45vh;
   width: 450px;
   position: absolute;
   overflow: hidden;
@@ -14,7 +17,8 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background: rgb(244, 243, 243);
+  background:rgb(164, 30, 104);
+  color: white;
 
 }
 .about-close{
@@ -26,11 +30,13 @@
   margin-top: 20px;
 }
 .about-footer{
-  background: rgb(233, 229, 229);
+  background:rgb(164, 30, 104);
   padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-top: 2vh;
+  color: aliceblue;
+  
 }
 .about-content{
 text-align: center;

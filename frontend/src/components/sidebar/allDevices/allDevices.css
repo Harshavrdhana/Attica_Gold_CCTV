@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background: linear-gradient(#5d1860, #1b078b);
+  background-color: rgb(125, 18, 96);
   color: white;
 }
 .allDevice-main {
@@ -21,7 +21,6 @@
   padding-top: 7px;
   padding-left: 15px;
   background: rgb(235, 230, 230);
-
   border-top: 1px solid rgb(216, 207, 207);
   display: flex;
   gap: 5px;
@@ -31,27 +30,28 @@
 .allDevice-buttons {
   padding: 5px 10px 5px 10px;
   border-color: rgb(234, 224, 224);
-  border-radius: 5px;
+  border-radius: 50px;
   margin-top: 5px;
   margin: 5px;
   display: flex;
   justify-content: end;
   padding-right: 10px;
 
-
-
 }
 
-.allDevice-Lan {
+.allDevice-lan {
   background: white;
-  color: rgb(65, 148, 225);
+  color: black;
+  border-bottom: 1px solid rgb(234, 228, 228);
   border-radius: 5px 5px 0px 0px;
 
 }
 
-.allDevice-onLan {
+.active-lan{
   background: white;
-  border-bottom: 1px solid rgb(234, 228, 228);
+  color: black;
+  border-radius: 5px 5px 0px 0px;
+  border: none;
 }
 
 .allDevice-content {

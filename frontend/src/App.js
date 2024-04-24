@@ -10,6 +10,7 @@ import HomePage from "./components/homepage/HomePage";
 import HomeLayout from "./components/layout/HomeLayout";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import IntroPage from "./components/homepage/IntroPage";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             <Route element={<HomeLayout />}>
               <Route path="/" element={<HomePage />} />
               <Route path="homepage" element={<HostLayout />}>
-                <Route index path="section" element={<Section />} />
+                <Route index element={<IntroPage/>}/> 
+                <Route path="section" element={<Section />} />
               </Route>
             </Route>
           </Route>

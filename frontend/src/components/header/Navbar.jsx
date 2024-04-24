@@ -49,7 +49,7 @@ const Navbar = () => {
                 onClick={handleModalProfile}
                 style={{ cursor: "pointer" }}
               />
-             {modalProfile && <ProfileModal handleModalProfile={handleModalProfile} />}
+              {modalProfile && <ProfileModal handleModalProfile={handleModalProfile} />}
               <span style={{ fontSize: "14px" }}>User</span>
             </div>
           </div>

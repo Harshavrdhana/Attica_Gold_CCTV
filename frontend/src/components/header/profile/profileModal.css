@@ -3,6 +3,7 @@
   border-radius: 5px;
   background-color: white;
   width: 50vW;
+  height: 85vh;
   position: absolute;
   top: 5%;
   left: 25%;
@@ -34,13 +35,12 @@
 .profile-account {
   background: rgb(238, 228, 228);
   padding: 3px 5px;
+  cursor: pointer;
 }
-
-.profile-password {
-  background: rgb(238, 228, 228);
-  padding: 3px 5px;
-}
-
+ .page-active{
+  background: white;
+  cursor: pointer;
+ }
 .profile-account:hover {
   background: white;
 }

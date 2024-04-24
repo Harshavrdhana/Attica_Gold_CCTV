@@ -44,11 +44,11 @@ const ProfileModal = ({ handleModalProfile }) => {
           </div>
           <div className='profile-nav2'>
             <div
-              className='profile-account'
+              className={`profile-account ${showUserAccount ? "page-active": ""}`}
               onClick={handleShowUserAccount}
             > User Account</div>
             <div
-              className='profile-password'
+              className={`profile-account ${showChangePassword ? "page-active": ""}`}
               onClick={handleShowPassword}
             >Password Change</div>
           </div>

@@ -1,8 +1,10 @@
 import React from "react";
 import { IoIosClose } from "react-icons/io";
 import "./about.css";
-import Image1 from "../../../assets/AboutLogo.jpg";
+import logo2 from "../../../assets/attica-gold-company-logo.jpg";
 import Draggable from 'react-draggable';
+
+
 
 const About = ({closeModal}) => {
   return (
@@ -15,20 +17,18 @@ const About = ({closeModal}) => {
             </div>
           </div>
           <div className="about-content">
-            <img className="about-Image" src={Image1} alt="" />
+             <img className="about-Image" src={logo2} alt="" /> 
             <div className="about-name">
+            
               <div>
-                <h1>Ezviz Studio</h1>
-              </div>
-              <div>
-                <p>2.3.0</p>
+                <p>1.1.0</p>
               </div>
             </div>
           </div>
           <div className="about-footer">
-            &copy;2016 EZVIZ Inc. All Rights Reserved <br />
-            For more information please visit
-            <span style={{ color: "blue" }}> www.izvizlife.com</span>
+            &copy;2024 ATTICA Gold. All Rights Reserved. <br />
+          
+           
           </div>
         </div>
       </Draggable>
