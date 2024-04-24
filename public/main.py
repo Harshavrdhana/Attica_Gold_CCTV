@@ -50,12 +50,12 @@ import cv2
 app = Flask(__name__)
 
 # rtsp_urls = {
-#     'camera1': 'rtsp://admin:LOZLUD@10.0.0.37:554/ch1/main',
+#     'camera1': 'rtsp://admin:LOZLUD@10.0.0.37:554/ch1/main',z
 #     'camera2': 'rtsp://admin:Admin@916@192.168.1.207:554/Streaming/Channels/101'
 # }
 
 def gen_frames():
-    rtsp_url = 'rtsp://admin:Attica@123@192.168.1.64:554/ch1/main'  # Replace with your camera's RTSP URL
+    rtsp_url = 'rtsp://admin:LOZLUD@10.0.0.57:554]/ch1/main'  # Replace with your camera's RTSP URL
     cap = cv2.VideoCapture(rtsp_url)
     while cap.isOpened():
         ret, frame = cap.read()
@@ -140,7 +140,7 @@ if __name__ == '__main__':
 
 # # Define RTSP URLs for multiple cameras
 # rtsp_urls = [
-#     'rtsp://admin:LOZLUD@10.0.0.37:554/ch1/main',
+#     'rtsp://admin:LOZLUD@10.0.0.57:554/ch1/main',
 #     'rtsp://admin:Admin@916@192.168.1.207:554/Streaming/Channels/101',
 #     # Add more RTSP URLs as needed
 # ]

@@ -53,8 +53,8 @@ const Section = () => {
                     allow="autoplay; encrypted-media"
                     allowFullScreen
                 ></iframe> */}
-                <img src="http://127.0.0.1:5000/video_feed" alt="alt" />
-
+                <img src="http://127.0.0.1:5000/video_feed" alt="alt"/>
+    
             </div>
         }
     }
