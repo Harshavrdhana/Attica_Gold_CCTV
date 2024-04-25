@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  text-decoration: none;
 }
 
 .homepage-card > span {

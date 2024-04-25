@@ -28,4 +28,4 @@ const ImagePlayer = ({ rtspUrl }) => {
   return <div>{imageSrc && <img src={imageSrc} alt="RTSP Image" />}</div>;
 };
 
-export default ImagePlayer;
+export default ImagePlayer

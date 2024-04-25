@@ -6,11 +6,10 @@ import { FaRegBell } from "react-icons/fa6";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoMdPower } from "react-icons/io";
 import ProfileModal from './profile/ProfileModal'
-
 import { useLogoutMutation } from "../../redux/api/usersApi";
-
 import { logout } from "../../redux/features/auth/authSlice";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -36,7 +35,7 @@ const Navbar = () => {
     <div>
       <div className="navbar">
         <div className="nav-logo">
-          <img className="attica-logo" src={logo} alt="logo" />
+      <Link to='/'>  <img className="attica-logo" src={logo} alt="logo" /> </Link>  
         </div>
 
         <div className="nav-end">

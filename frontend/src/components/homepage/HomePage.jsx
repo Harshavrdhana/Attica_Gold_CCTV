@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../header/Navbar";
-import img1 from "../../assets/crm.png";
-import img2 from "../../assets/live-streaming.png";
-import img3 from "../../assets/transaction.png";
-import img4 from "../../assets/database.png";
-import img5 from "../../assets/documentation.png";
-import img6 from "../../assets/recognition.png";
-import img7 from "../../assets/billing.png";
-import img8 from "../../assets/register.png";
+import img1 from "../../assets/homepageicon/photo_2024-04-24_15-50-26.jpg";
+import img2 from "../../assets/homepageicon/photo_2024-04-24_15-50-00.jpg";
+import img3 from "../../assets/homepageicon/photo_2024-04-24_15-50-11.jpg";
+import img4 from "../../assets/homepageicon/photo_2024-04-24_17-39-35.jpg";
+import img5 from "../../assets/homepageicon/photo_2024-04-24_15-50-07.jpg";
+import img6 from "../../assets/homepageicon/photo_2024-04-24_15-50-36.jpg";
+import img7 from "../../assets/homepageicon/photo_2024-04-24_15-50-42.jpg";
+import img8 from "../../assets/homepageicon/register.png";
 import "./homePage.css";
 
 const HomePage = () => {
@@ -44,7 +44,7 @@ const HomePage = () => {
       </div>
       <div className="homepage-card">
         <img src={img8} alt="Register" />
-        <span>Register</span>
+        <span>Agent Reg.</span>
       </div>
     </div>
   );
